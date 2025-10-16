@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Música Rap</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 25px;
+      text-align: center;
+      background-image: linear-gradient(to right, #111, #222, #111);
+    }
+
+    h1 {
+      color: #00ff88;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #00ffaa;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.activo {
+      color: gray;
+      text-decoration: underline;
+      pointer-events: none;
+      cursor: default;
+      font-style: italic;
+    }
+
+    main {
+      padding: 25px;
+    }
+
+    h2 {
+      color: #00ffaa;
+      border-bottom: 2px solid #00ffaa;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "🎤 ";
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Música Rap</h1>
+  <p>El ritmo callejero que mueve al mundo</p>
+  <nav>
+    <a href="Index.html">Rock</a>
+    <a href="pagina2.html"class="activo">Rap</a>
+    <a href="pagina3.html">Pop</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Artistas Legendarios</h2>
+    <ul>
+      <li>2Pac</li>
+      <li>The Notorious B.I.G.</li>
+      <li>Eminem</li>
+      <li>Wiz Khalifa</li>
+      <li>Ice Cube</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Escucha una muestra</h2>
+    <audio controls>
+      <source src="rap.mp3" type="audio/mpeg" />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Página de Rap Sencilla
+</footer>
+
+</body>
+</html>
+

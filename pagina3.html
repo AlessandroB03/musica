@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Música Pop</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d080ff;
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.activo {
+      color: #eee;
+      text-decoration: underline;
+      pointer-events: none;
+      cursor: default;
+      font-style: italic;
+    }
+
+    main {
+      padding: 25px;
+    }
+
+    h2 {
+      color: #9a33d6;
+      border-bottom: 2px solid #b033d6;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "🎶 ";
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e9b3f0;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Música Pop</h1>
+  <p>Los éxitos que dominan las listas</p>
+  <nav>
+    <a href="Index.html">Rock</a>
+    <a href="pagina2.html">Rap</a>
+    <a href="pagina3.html" class="activo">Pop</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Artistas Pop Famosos</h2>
+    <ul>
+      <li>Michael Jackson</li>
+      <li>Dua Lipa</li>
+      <li>Madonna</li>
+      <li>Ariana Grande</li>
+      <li>Justin Bieber</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Escucha una muestra</h2>
+    <audio controls>
+      <source src="pop.mp3" type="audio/mpeg" />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Página de Pop Senc
+
